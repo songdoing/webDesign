@@ -1,0 +1,260 @@
+body {
+    background : url(../pictures/back2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Sawarabi Gothic', sans-serif, cursive;
+    font-size : 115%;
+}
+a:link {
+    color : white;
+}
+
+#wrap {
+    max-width: 1200px;
+    margin : 0 auto;
+}
+#header {
+    float : left;
+    margin : 0;
+    
+}
+
+nav ul{
+    list-style: none;
+    height : 50px;
+    padding : 50px 5% 5px;
+    background-color: rgba(0,0,0, 0.4);    
+    border-radius : 35px;
+    margin-left : 120px;
+}
+nav li {
+    float : left;
+    margin-right: 100px;
+    transition : all .5s ease-in;
+}
+nav a {
+    display :block;
+    text-decoration: none;
+    font-size : 30px;
+    color : white;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    letter-spacing: 1px;
+    
+}
+nav li:hover {
+    margin-top : -12px;
+    
+}
+nav a:hover {
+    font-size: 35px;
+    color: white;
+}
+
+/* container */
+#container {
+    width : 90%;
+    max-width: 1100px;
+    min-width: 760px;
+    margin : auto;
+}
+
+#slidediv {
+    clear: both;
+}
+
+#dotsdiv {
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* main */
+#main {
+    width : 90%;
+    max-width: 1100px;
+    min-width: 760px;
+    margin: 50px auto;
+}
+#columns {
+    -webkit-column-count :2;
+    -webkit-column-gap : 60px;
+    -moz-column-count :2;
+    -moz-column-gap :60px;
+    column-count :2;
+    column-gap :60px;
+}
+.product {
+    display : inline-block;
+    width : 200px;
+    background:#fff;
+    box-shadow: 0px 1px 1px #ccc;
+    padding : 15px;
+    padding-bottom: 15px;
+    margin : 10px;
+}
+.product img {
+    width :100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+.product p {
+    font-family: 'Philosopher', sans-serif;
+    color:#333;
+    margin : 0;
+    padding : 10px;
+}
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    color:#333;
+}
+
+/* footer */
+footer {
+    clear:both;
+}
+#parent {
+    display : flex;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-family: 'Aclonica', sans-serif;
+}
+#parent h4 {
+    padding-left :30px;
+}
+#SectionDiv {
+    width: 300px;
+}
+
+#parent li {
+    list-style: none;
+}
+
+#parent a {
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#branchDiv {
+    flex: 2;
+}
+
+#branchDiv a {
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Aclonica', sans-serif;
+}
+#mediaDiv {
+    flex: 1;
+    margin-top: 49px;
+}
+
+#mediaDiv img {
+    height: 40px;
+    width: 40px;
+}
+
+#mediaDiv li {
+    float: left;
+    list-style: none;
+    padding: 2%;
+    margin: 1%;
+}
+#copyright {
+    float : right;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right : 15px;
+    margin-bottom: 15px;
+    color : #331a00;
+    list-style: none;
+}
+
+/* footer end */
+
+/* Media Query */
+
+@media screen and (min-width : 960px){
+    #columns {
+    -webkit-column-count :3;
+    -webkit-column-gap : 30px;
+    -moz-column-count :3;
+    -moz-column-gap : 30px;
+    column-count :3;  
+    column-gap : 30px;
+    }
+}
+
+@media screen and (max-width:700px){
+    body {
+    font-size: 100%;
+    }
+    #header { 
+    display : none;
+    }
+    ul {
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 5% -43% 9% 7%;    
+    }
+    ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 110%;    
+    }
+    #slidediv img {
+    max-width: 100%;
+    margin : auto;
+    }
+    .dot {
+    height: 10px;
+    widows: 10px;
+    }
+    h2 {
+    display : none;
+    }
+    #gallery{
+    margin-top: -10%;
+    margin-left: 4%;    
+    }
+    #marquee {
+    margin-top: 5%;
+    }
+    #marquee img {
+    width: 150px;
+    height: 150px;    
+    }
+    footer {
+       font-size:16px;
+       margin:40px;
+    }
+
+    #mediaDiv {
+        display : none;
+    }
+}

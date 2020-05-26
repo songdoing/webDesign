@@ -1,0 +1,211 @@
+body {
+    background : url(../pictures/back2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Sawarabi Gothic', sans-serif, cursive;
+    font-size : 115%;
+}
+a:link {
+    color : white;
+}
+
+#wrap {
+    max-width: 1200px;
+    margin : 0 auto;
+}
+#header {
+    float : left;
+    margin : 0;
+    
+}
+
+nav ul{
+    list-style: none;
+    height : 50px;
+    padding : 50px 5% 5px;
+    background-color: rgba(0,0,0, 0.4);    
+    border-radius : 35px;
+    margin-left : 120px;
+}
+nav li {
+    float : left;
+    display : inline;
+    margin-right: 100px;
+    transition : all .5s ease-in;
+}
+nav a {
+    display :block;
+    text-decoration: none;
+    font-size : 30px;
+    color : white;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    letter-spacing: 1px;
+    
+}
+nav li:hover {
+    margin-top : -12px;
+    
+}
+nav a:hover {
+    font-size: 35px;
+    color: white;
+}
+/* container */
+#container {
+    width : 90%;
+    max-width: 1100px;
+    min-width: 760px;
+    margin : auto;
+}
+
+#slidediv {
+    clear: both;
+}
+
+#dotsdiv {
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*pragraphDiv */
+
+#pragraphDiv {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color:#e6e6e6;
+    opacity: 0.9;
+}
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    color:#333;
+}
+/* footer */
+
+#parent {
+    display : flex;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-family: 'Aclonica', sans-serif;
+}
+#parent h4 {
+    padding-left :30px;
+}
+#SectionDiv {
+    width: 300px;
+}
+
+#parent li {
+    list-style: none;
+}
+
+#parent a {
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#branchDiv {
+    flex: 2;
+}
+
+#branchDiv a {
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Aclonica', sans-serif;
+}
+#mediaDiv {
+    flex: 1;
+    margin-top: 49px;
+}
+
+#mediaDiv img {
+    height: 40px;
+    width: 40px;
+}
+
+#mediaDiv li {
+    float: left;
+    list-style: none;
+    padding: 2%;
+    margin: 1%;
+}
+#copyright {
+    float : right;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right : 15px;
+    margin-bottom: 15px;
+    color : #331a00;
+    list-style: none;
+}
+
+/* footer end */
+
+/* media query */
+@media screen and (max-width: 700px) {
+    body {
+    font-size: 100%;
+    }
+    #header { 
+    display : none;
+    }
+    ul {
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 5% -43% 9% 7%;    
+    }
+    ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 110%;    
+    }
+    #slidediv img {
+    max-width: 100%;
+    margin : auto;
+    }
+    .dot {
+    height: 10px;
+    widows: 10px;
+    }
+    h2 {
+    font-size: 70%;
+    }
+    p{
+    font-size:70%;
+    }
+
+    footer {
+    font-size:16px;
+    margin:40px;
+    }
+
+    #mediaDiv {
+    display : none;
+    }
+}
